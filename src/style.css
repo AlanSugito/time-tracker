@@ -6,7 +6,7 @@
 body{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    flex-direction: column;
     background-color: hsl(226, 43%, 10%);
 }
 .container{
@@ -101,7 +101,16 @@ body{
         transform: scale(1);
     }
 }
+.attribution{
+    padding: 20px;
+    color: white;
 
+}
+.attribution > a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
 /* responsive deign */
 
 @media (max-width: 600px){
