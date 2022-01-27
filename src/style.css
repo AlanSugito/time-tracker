@@ -17,14 +17,14 @@ body{
     grid-template-areas: 
      "profile work play study"
      "profile exercise social selfcare";
-    gap: 1em;
+    gap: 2em;
     position: relative;
     margin-top: 100px;
 }
 .card-profile{
     width: 100%;
     background-color: hsl(235, 46%, 20%);
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -34,7 +34,7 @@ body{
 .card{
     width: 300px;
     background-color: hsl(235, 46%, 20%);
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -43,9 +43,9 @@ body{
 }
 
 .card-profile .profile{
-    background-color: hsl(235, 45%, 61%);
+    background-color: hsl(246, 80%, 60%);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .card-profile .profile > p{
