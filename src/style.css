@@ -6,21 +6,20 @@
 body{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     background-color: hsl(226, 43%, 10%);
+
+
 }
 .container{
     display: grid;
     grid-template-columns: repeat (3, 1fr );
-    /* outline: 2px solid black; */
     grid-template-areas: 
      "profile work play study"
      "profile exercise social selfcare";
     gap: 1em;
-    /* height: 500px; */
     position: relative;
     margin-top: 100px;
-    padding: 20px;
 }
 .card-profile{
     width: 100%;
@@ -57,7 +56,6 @@ body{
     font-weight: 300;
 }
 .avatar{
-    /* min-width: 10%; */
     width: 40%;
     outline: 2px solid white;
     border-radius: 50%;
@@ -81,19 +79,11 @@ body{
 .card-profile ul li:hover{
     color: white;
 }
-/* .card-container{
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-area: 
-     "work play study"
-     "exercise social selfcare";
-} */
+
 .transition{
     animation: change 1s forwards;
 }
-/* .active{
-    color: red !important;
-} */
+
 
 @keyframes change {
     from{
@@ -125,7 +115,8 @@ body{
          "study"
          "exercise"
          "social"
-         "selfcare"
+         "selfcare";
+         padding: 20px;
     }
     .card{
         width: 100%;
