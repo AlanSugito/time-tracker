@@ -1,0 +1,165 @@
+.Work{
+    background-color: hsl(15, 100%, 70%);
+    grid-area: work;
+
+
+}
+.card.Work .head{
+    height: 50px;
+    text-align: right;
+}
+.card.Work .icon{
+   /* position: relative; */
+    width: 30%;  
+}
+.Work > .text{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    /* height: auto; */
+    font-weight: 300;
+    padding: 20px;
+    
+}
+.card .text{
+    transition: .3s;
+}
+.card .text:hover{
+    background-color: hsl(246, 80%, 60%);
+}
+.card.Self.Care .text:hover{
+    background: hsl(246, 80%, 60%)
+}
+
+.card.Work .text > h2{
+    font-size: 35px;
+}
+.head-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10;
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.head-text span{
+    font-size: 2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Play{
+    background-color: hsl(195, 74%, 62%);
+    grid-area: play;
+}
+.card.Play .head{
+    height: 50px;
+    text-align: right;
+}
+.card.Play .icon{
+   /* position: relative; */
+    width: 30%;  
+}
+.Play > .text{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    /* height: auto; */
+    font-weight: 300;
+    padding: 20px;
+    
+}
+.card.Play .text > h2{
+    font-size: 35px;
+}
+.Self.Care{
+    background-color: hsl(43, 84%, 65%);
+    grid-area: selfcare;
+}
+.card.Self.Care .head{
+    height: 50px;
+    text-align: right;
+}
+.card.Self.Care .icon{
+   /* position: relative; */
+    width: 30%;  
+}
+.Self.Care > .text{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    /* height: auto; */
+    font-weight: 300;
+    padding: 20px;
+    
+}
+.card.Self.Care .text > h2{
+    font-size: 35px;
+}
+.Study{
+    background-color: hsl(348, 100%, 68%);
+    grid-area: study;
+}
+.card.Study .head{
+    height: 50px;
+    text-align: right;
+}
+.card.Study .icon{
+   /* position: relative; */
+    width: 30%;  
+}
+.Study > .text{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    /* height: auto; */
+    font-weight: 300;
+    padding: 20px;
+    
+}
+.card.Study .text > h2{
+    font-size: 35px;
+}
+.Exercise{
+    background-color: hsl(145, 58%, 55%);
+    grid-area: exercise;
+}
+.card.Exercise .head{
+    height: 50px;
+    text-align: right;
+}
+.card.Exercise .icon{
+   /* position: relative; */
+    width: 30%;  
+}
+.Exercise > .text{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    /* height: auto; */
+    font-weight: 300;
+    padding: 20px;
+    
+}
+.card.Exercise .text > h2{
+    font-size: 35px;
+}
+.Social{
+    background-color: hsl(264, 64%, 52%);
+    grid-area: social;
+}
+.card.Social .head{
+    height: 50px;
+    text-align: right;
+}
+.card.Social .icon{
+   /* position: relative; */
+    width: 30%;  
+}
+.Social > .text{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    /* height: auto; */
+    font-weight: 300;
+    padding: 20px;
+    
+}
+.card.Social .text > h2{
+    font-size: 35px;
+}

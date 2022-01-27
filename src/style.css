@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+    font-family: "Rubik";
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: hsl(226, 43%, 10%);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr );
+    /* outline: 2px solid black; */
+    grid-template-areas: 
+     "profile work play study"
+     "profile exercise social selfcare";
+    gap: 1em;
+    /* height: 500px; */
+    position: relative;
+    margin-top: 100px;
+}
+.card-profile{
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    grid-area: profile;
+}
+.card{
+    width: 300px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    height: 300px;
+}
+
+.card-profile .profile{
+    background-color: hsl(235, 45%, 61%);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.card-profile .profile > p{
+    font-weight: 200;
+}
+.card-profile .profile-text > h2{
+    font-size: 3em;
+    font-weight: 300;
+}
+.avatar{
+    /* min-width: 10%; */
+    width: 40%;
+    outline: 2px solid white;
+    border-radius: 50%;
+}
+.card-profile ul{
+    margin-top: 40px;
+}
+.card-profile .profile-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-profile ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.75);
+    transition: .3s;
+    font-size: 1.5em;
+}
+.card-profile ul li:hover{
+    color: white;
+}
+/* .card-container{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-area: 
+     "work play study"
+     "exercise social selfcare";
+} */
+.transition{
+    animation: change 1s forwards;
+}
+/* .active{
+    color: red !important;
+} */
+
+@keyframes change {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+/* responsive deign */
+
+@media (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+         "profile"
+         "work"
+         "play"
+         "study"
+         "exercise"
+         "social"
+         "selfcare"
+    }
+    .card{
+        width: 100%;
+    }
+    .card-profile ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .avatar{
+        width: 100px;
+        height: 100px;
+    }
+}
